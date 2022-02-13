@@ -1,0 +1,73 @@
+body {
+    width:100%; 
+    height:100vh;
+    margin:0;
+    background-color:#1b1b32;
+    color:#f5f6f7;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+}
+label{
+    display:block;
+    margin: 0.5rem 0;
+}/*label elements are inline by default; hence, add the display block to put them on separate lines.*/
+
+h1, p{
+    margin:1em auto;
+    text-align: center;
+}
+form{
+    margin:0 auto;
+    max-width: 500px;
+    min-width: 300px;
+    width: 60vw;
+    padding: 0 0 2em 0;
+}
+fieldset{
+    border: 0;
+    padding: 2em 0;
+}
+fieldset:not(:last-of-type){
+    border-bottom: 3px solid #3b3b4f;
+}/*pseudoclass*/
+
+input, textarea, select {
+    width:100%;
+    margin: 10px 0 0 0;
+    min-height: 2em;
+  }
+  /*this causes the input, textarea and select to drop and take up the entire width.*/
+
+  .inline{
+    width:unset;
+    margin:0 0.5em 0 0;
+    vertical-align: middle;
+  } /*this removes the earlier rule which set all the input elements to width 100%*/
+   /*margin moves the verbiage, the radio buttons.*/
+   /*the vertical align, aligned the verbiage with the radio buttons*/
+   
+   input, textarea {
+    background-color:#0a0a23;
+    border:1px solid #0a0a23;
+    color:#ffffff;
+   
+  }/*blends the input ares with the background themes.*/
+   /*now you can read the inputs color and heighth wise. height moved to textarea select and input*/
+  
+   input[type="submit"] {
+    display:block;
+    width:60%;
+    margin: 1em auto;
+    min-width:300px;
+    height: 2em;
+    font-size: 1.1rem;
+    background-color: #3b3b4f;
+    border-color: white;
+   
+}/*references back to the so no need to create a class.*/
+input[type="file"]{
+    padding: 1px 2px;
+}
+a {
+    color: #dfdfe2;
+  }
